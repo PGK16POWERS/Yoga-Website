@@ -19,3 +19,55 @@ body {
     --nuns: "Nunito", sans-serif;
     --monts: "Montserrat", sans-serif;
 }
+
+.section {
+    min-height: 30vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* LANDING PAGE SECTION */
+
+#landing-section {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+
+.main-content, .mc-child{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mc-child {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* LANDING PAGE SECTION */
