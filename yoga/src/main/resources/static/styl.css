@@ -51,6 +51,10 @@ body {
     background-size: cover;
 }
 
+#landing-section .section {
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -129,6 +133,10 @@ header nav ul li a {
     padding: 2rem 1rem;
 }
 
+.abo-parent .abo-child:last-child {
+    flex-direction: row-reverse;
+}
+
 .abo-img-div, .about-us-content {
     width: 100%;
     height: 100%;
@@ -177,6 +185,9 @@ header nav ul li a {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
 
 .modal {
@@ -189,9 +200,35 @@ header nav ul li a {
 }
 
 .modal-img {
-    border: 2px solid black;
     height: 100%;
     width: 100%;
+}
+
+#directions-section .modal:first-child .modal-img {
+    background-image: url("/photo-and-Icons/pose1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center top;
+    border-radius: 10px;
+}
+
+#directions-section .modal:nth-child(2) .modal-img {
+    background-image: url("/photo-and-Icons/pose2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center top;
+    border-radius: 10px;
+}
+
+#directions-section .modal:last-child .modal-img {
+    background-image: url("/photo-and-Icons/pose3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center top;
+    border-radius: 10px;
 }
 
 .modal-details {
@@ -209,6 +246,37 @@ header nav ul li a {
 }
 /* DIRECTIONS SECTION */
 
+/* INSTRUCTOR SECTION */
+
+#instructors-section .modal:first-child .modal-img {
+    background-image: url("/photo-and-Icons/Instructor1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+#instructors-section .modal:nth-child(2) .modal-img {
+    background-image: url("/photo-and-Icons/Instructor2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center top;
+    border-radius: 10px;
+}
+
+#instructors-section .modal:last-child .modal-img {
+    background-image: url("/photo-and-Icons/Instructor3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    background-position: center top;
+    border-radius: 10px;
+}
+
+/* INSTRUCTOR SECTION */
+
 /* PRICE SECTION */
 
 .modal-price-div {
@@ -217,7 +285,8 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .9rem;
+    gap: 1.5rem;
+    border: 1px solid #eaeaea
 }
 
 .modal-price-div .modal-details {
@@ -228,6 +297,12 @@ header nav ul li a {
 .modal-price-div .modal-details .modal-price {
     font-size: 1.2em;
     font-weight: 500;
+}
+
+#price-plan-section .modal-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 3 */
@@ -367,9 +442,131 @@ footer .div-parent {
     color: #4C4C4C;
 }
 
-
 /* FOOTER SECTION */
 
 @media (max-width: 1000px) {
+    .section {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    /* LANDING PAGE SECTION */
 
+    #landing-section {
+        height: 70vh;
+        background-position: center center;
+        padding: 0px;
+    }
+
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    .brand-logo {
+        width: 90px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mc-child {
+        gap: .5rem;
+    }
+    
+    .hero-header {
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .hero-sub-header {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: white;
+    }
+
+    /* LANDING PAGE SECTION */
+
+    /* ABOUT US SECTION */
+
+    #about-us-section {
+        gap: 1em;
+    }
+
+    #about-us-section .sect-header-div {
+        text-align: center;
+    }
+
+    .abo-parent {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .abo-parent .abo-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .abo-child .abo-img-div {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0 solid transparent;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+    .abo-child .abo-img-div:first-child {
+        background-image: url("/photo-and-Icons/abo1.jpg");
+    }
+
+    .abo-child .abo-img-div:last-child {
+        background-image: url("/photo-and-Icons/abo5.jpg");
+        background-position: center top;
+    }
+
+    .abo-parent .abo-child:last-child {
+        flex-direction: column;
+    }
+
+    .about-us-paragraph {
+        font-size: .9em;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* ABUT US SECTION */
+
+    /* FOOTER SECTION */
+
+    footer {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    footer .div-parent {
+        gap: 1rem;
+    }
+
+    .div-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inner-header {
+        font-size: 1.3em;
+    }
+
+    .footer-link {
+        font-size: 1em;
+    }
+
+    /* FOOTER SECTION */
 }
