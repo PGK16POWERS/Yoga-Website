@@ -22,7 +22,6 @@ body {
 
 .section {
     min-height: 30vh;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +46,10 @@ body {
 
 #landing-section {
     height: 100vh;
+    background-image: url("/photo-and-Icons/landingpic.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -67,7 +70,7 @@ header nav ul li a {
     font-size: 1em;
     letter-spacing: 1px;
     font-weight: 400;
-
+    color: white;
 }
 
 .main-content, .mc-child{
@@ -185,3 +188,168 @@ header nav ul li a {
     font-weight: 500;
 }
 /* DIRECTIONS SECTION */
+
+/* PRICE SECTION */
+
+.modal-price-div {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .9rem;
+}
+
+.modal-price-div .modal-details {
+    width: 100%;
+    align-items: center;
+}
+
+.modal-price-div .modal-details .modal-price {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* 3 */
+.modal-price-div button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 200px;
+  height: 80px;
+  color: rgb(2, 102, 251);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  font-family: var(--nuns);
+  font-weight: 400;
+}
+.btn-3 {
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 80px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    border: 0 solid transparent;
+    border-radius: 16px 16px 0 0;
+}
+
+footer .sect-header-div {
+    width: 100%;
+    text-align: left;
+}
+
+footer .div-parent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 5rem;
+    gap: 2rem;
+}
+
+.div-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inner-header {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.footer-link {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #4C4C4C;
+}
+
+
+/* FOOTER SECTION */
+
+@media (max-width: 1000px) {
+
+}
