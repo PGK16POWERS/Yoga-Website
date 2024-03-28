@@ -27,6 +27,18 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1rem;
+}
+
+.sect-header-div {
+    width: 100%;
+    text-align: center;
+}
+
+.sect-header {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+
 }
 
 /* LANDING PAGE SECTION */
@@ -70,4 +82,24 @@ header nav ul li a {
     gap: 1rem;
 }
 
+.hero-header {
+    font-size: 5em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.hero-sub-header {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 300
+}
+
 /* LANDING PAGE SECTION */
+
+/* ABOUT US SECTION */
+
+
+
+
+
+/* ABUT US SECTION */
