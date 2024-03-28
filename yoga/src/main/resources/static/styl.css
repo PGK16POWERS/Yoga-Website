@@ -47,7 +47,6 @@ body {
 #landing-section {
     height: 100vh;
     background-image: url("/photo-and-Icons/landingpic.jpg");
-    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -78,7 +77,7 @@ header nav ul li a {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .mc-child {
@@ -91,12 +90,14 @@ header nav ul li a {
     font-size: 5em;
     letter-spacing: 2px;
     font-weight: 500;
+    color: white;
 }
 
 .hero-sub-header {
     font-size: 2em;
     letter-spacing: 2px;
-    font-weight: 300
+    font-weight: 300;
+    color: white;
 }
 
 /* LANDING PAGE SECTION */
@@ -123,13 +124,32 @@ header nav ul li a {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: 100%;
     align-items: flex-start;
-    border: 2px solid black;
     padding: 2rem 1rem;
 }
 
 .abo-img-div, .about-us-content {
     width: 100%;
+    height: 100%;
+}
+
+.abo-child .abo-img-div:first-child {
+    background-image: url("/photo-and-Icons/abo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid transparent;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.abo-child .abo-img-div:last-child {
+    background-image: url("/photo-and-Icons/abo5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 10px;
+    height: 500px;
 }
 
 .about-us-content {
