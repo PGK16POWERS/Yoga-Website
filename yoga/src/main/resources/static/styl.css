@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .sect-header-div {
@@ -36,9 +36,10 @@ body {
 }
 
 .sect-header {
-    font-size: 1.5em;
+    font-size: 1.8em;
     letter-spacing: 1px;
-
+    font-weight: 500;
+    color: gainsboro;
 }
 
 /* LANDING PAGE SECTION */
@@ -98,8 +99,55 @@ header nav ul li a {
 
 /* ABOUT US SECTION */
 
+#about-us-section {
+    gap: 1em;
+}
 
+#about-us-section .sect-header-div {
+    width: 100%;
+    text-align: left;
+}
 
+.abo-parent {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+}
 
+.abo-parent .abo-child {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+    border: 2px solid black;
+    padding: 2rem 1rem;
+}
+
+.abo-img-div, .about-us-content {
+    width: 100%;
+}
+
+.about-us-content {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.about-us-paragraph {
+    font-size: 1.1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    color: #545454;
+    width: 600px;
+    text-align: justify;
+}
 
 /* ABUT US SECTION */
+
+/* DIRECTIONS SECTION */
+
+
+
